@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_data"
+        android:icon="@drawable/ic_action_data"
+        android:title="נתונים" />
+    <item
+        android:id="@+id/nav_dayData"
+        android:icon="@drawable/ic_action_day_data"
+        android:title="היסטוריה" />
+    <item
+        android:id="@+id/nav_leaderboard"
+        android:icon="@drawable/ic_action_leaderboard"
+        android:title="טבלת תוצאות" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:title="התנתקות" />
+</menu>

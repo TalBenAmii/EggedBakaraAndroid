@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "175455238879",
+    "firebase_url": "https://eggedbakara-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eggedbakara",
+    "storage_bucket": "eggedbakara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175455238879:android:6c4931a1846238f001c76a",
+        "android_client_info": {
+          "package_name": "app.example.bubithebakar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175455238879-u8pcueth696kg872n6igt870ldn7di89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAACEJxto83mHLWPcYBBDMn4m2_PXiUQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175455238879-u8pcueth696kg872n6igt870ldn7di89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

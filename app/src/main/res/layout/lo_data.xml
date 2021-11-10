@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:autoSizeTextType="uniform"
+    android:background="@drawable/gradient"
+    tools:context="app.example.bubithebakar.Data">
+
+    <LinearLayout
+        android:id="@+id/lo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:autoSizeTextType="uniform"
+        android:weightSum="2"
+        android:background="#80BEFFBA"
+        app:layout_constraintBottom_toTopOf="@+id/tvBakarot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="בקרות"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="בקרות"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvBakarot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lo" />
+
+    <TextView
+        android:id="@+id/tvBakarot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="בקרות"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvMisparBakarot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sep" />
+
+    <TextView
+        android:id="@+id/tvMisparBakarot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#11000000"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBakarot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBakarot" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressBakarot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTikufim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMisparBakarot"
+        app:progressView_autoAnimate="true"
+        app:progressView_colorBackground="#8014C65C"
+        app:progressView_colorProgress="#FFFFFF"
+        app:progressView_labelColorInner="@color/black"
+        app:autoSizeTextType="uniform"
+        app:progressView_labelColorOuter="@color/black"
+        app:progressView_labelSize="13sp"
+        app:progressView_labelSpace="10dp"
+        app:progressView_labelText=""
+        app:progressView_labelTypeface="bold"
+        app:progressView_max="100"
+        app:progressView_min="0"
+        app:progressView_padding="1dp"
+        app:progressView_radius="12dp" />
+
+    <TextView
+        android:id="@+id/tvTikufim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="תיקופים"
+        android:textColor="@android:color/black"
+        app:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvMisparTikufim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBakarot" />
+
+    <TextView
+        android:id="@+id/tvMisparTikufim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#11000000"
+        app:autoSizeTextType="uniform"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressTikufim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTikufim" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressTikufim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKnasot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMisparTikufim"
+        app:progressView_autoAnimate="true"
+        app:progressView_colorBackground="#8014C65C"
+        app:progressView_colorProgress="#FFFFFF"
+        app:progressView_labelColorInner="@color/black"
+        app:progressView_labelColorOuter="@color/black"
+        app:progressView_labelSize="13sp"
+        app:progressView_labelSpace="10dp"
+        app:progressView_labelTypeface="bold"
+        app:progressView_max="100"
+        app:autoSizeTextType="uniform"
+        app:progressView_min="0"
+        app:progressView_padding="1dp"
+        app:progressView_radius="12dp" />
+
+    <TextView
+        android:id="@+id/tvKnasot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="קנסות"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvMisparKnasot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressTikufim" />
+
+    <TextView
+        android:id="@+id/tvMisparKnasot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:background="#11000000"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressKnasot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKnasot" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressKnasot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAchived"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMisparKnasot"
+        app:progressView_autoAnimate="true"
+        app:progressView_colorBackground="#8014C65C"
+        app:progressView_colorProgress="#FFFFFF"
+        app:progressView_labelColorInner="@color/black"
+        app:autoSizeTextType="uniform"
+        app:progressView_labelColorOuter="@color/black"
+        app:progressView_labelSize="13sp"
+        app:progressView_labelSpace="10dp"
+        app:progressView_labelTypeface="bold"
+        app:progressView_max="100"
+        app:progressView_padding="1dp"
+        app:progressView_progress="40"
+        app:progressView_radius="12dp">
+
+    </com.skydoves.progressview.ProgressView>
+
+    <Button
+        android:id="@+id/btnAchived"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#1d6700"
+        android:text="הכנס הישג יומי"
+        android:textColor="@android:color/black"
+        app:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressKnasot" />
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#1d6700"
+        android:text="הכנס מטרה חודשית"
+        app:autoSizeTextType="uniform"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAchived" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btnNav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#0F3700"
+        android:textStyle="bold"
+        app:itemIconSize="26dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddData"
+        app:menu="@menu/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
